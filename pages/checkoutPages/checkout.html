@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout - Capture Rent</title>
+    <link rel="stylesheet" href="/styles/checkoutStyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Red+Hat+Display:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="/index.html" class="nav-logo"> CAPTURE RENT </a>
+        <ul class="nav-menu">
+          <li><a href="/index.html" class="nav-link">Home</a></li>
+        </ul>
+        <div class="nav-socials">
+          <a href="/pages/cartPages/cart.html" class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">2</span>
+          </a>
+          <a href="#" class="social-icon"
+            ><img src="/assets/icons/twit-black.png" alt="X"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img src="/assets/icons/ig-black.png" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+    </nav>
+
+    <main class="checkout-main">
+      <div class="container">
+        <h1 class="page-title">Checkout</h1>
+
+        <div class="checkout-content">
+          <div class="checkout-form">
+            <div class="form-section">
+              <h2 class="section-title">Informasi Penyewa</h2>
+              <div class="form-group">
+                <label for="name">Nama Lengkap</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Masukkan nama lengkap Anda"
+                />
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Masukkan email Anda"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Nomor Telepon</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Masukkan nomor telepon"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="address">Alamat</label>
+                <textarea
+                  id="address"
+                  name="address"
+                  rows="3"
+                  placeholder="Masukkan alamat lengkap"
+                ></textarea>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="city">Kota</label>
+                  <input
+                    type="text"
+                    id="city"
+                    name="city"
+                    placeholder="Masukkan kota"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="postal">Kode Pos</label>
+                  <input
+                    type="text"
+                    id="postal"
+                    name="postal"
+                    placeholder="Masukkan kode pos"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h2 class="section-title">Informasi Identitas</h2>
+              <div class="form-group">
+                <label for="id-type">Jenis Identitas</label>
+                <select id="id-type" name="id-type">
+                  <option value="" disabled selected>
+                    Pilih jenis identitas
+                  </option>
+                  <option value="ktp">KTP</option>
+                  <option value="sim">SIM</option>
+                  <option value="passport">Passport</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="id-number">Nomor Identitas</label>
+                <input
+                  type="text"
+                  id="id-number"
+                  name="id-number"
+                  placeholder="Masukkan nomor identitas"
+                />
+              </div>
+              <div class="form-group">
+                <label for="id-upload">Unggah Foto Identitas</label>
+                <div class="file-upload">
+                  <input type="file" id="id-upload" name="id-upload" />
+                  <div class="upload-btn">
+                    <i class="fas fa-upload"></i> Pilih File
+                  </div>
+                  <div class="file-name">Belum ada file yang dipilih</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-section">
+              <h2 class="section-title">Metode Pembayaran</h2>
+              <div class="payment-methods">
+                <div class="payment-method">
+                  <input
+                    type="radio"
+                    id="transfer"
+                    name="payment"
+                    value="transfer"
+                    checked
+                  />
+                  <label for="transfer">Transfer Bank</label>
+                </div>
+                <div class="payment-method">
+                  <input
+                    type="radio"
+                    id="virtual-account"
+                    name="payment"
+                    value="virtual-account"
+                  />
+                  <label for="virtual-account">Virtual Account</label>
+                </div>
+                <div class="payment-method">
+                  <input
+                    type="radio"
+                    id="e-wallet"
+                    name="payment"
+                    value="e-wallet"
+                  />
+                  <label for="e-wallet">E-Wallet</label>
+                </div>
+              </div>
+              <div class="form-group payment-details">
+                <label for="bank">Pilih Bank</label>
+                <select id="bank" name="bank">
+                  <option value="" disabled selected>Pilih Bank</option>
+                  <option value="bca">BCA</option>
+                  <option value="bni">BNI</option>
+                  <option value="bri">BRI</option>
+                  <option value="mandiri">Mandiri</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-summary">
+            <h2>Ringkasan Pesanan</h2>
+            <div class="summary-items">
+              <div class="summary-item">
+                <div class="item-info">
+                  <span class="item-name">Canon EOS 5D Mark IV</span>
+                  <span class="item-duration">7 hari</span>
+                </div>
+                <span class="item-price">Rp 1.050.000</span>
+              </div>
+              <div class="summary-item">
+                <div class="item-info">
+                  <span class="item-name">Sony Alpha A7 III</span>
+                  <span class="item-duration">7 hari</span>
+                </div>
+                <span class="item-price">Rp 1.400.000</span>
+              </div>
+            </div>
+
+            <div class="total-summary">
+              <div class="summary-line">
+                <span>Subtotal</span>
+                <span>Rp 2.450.000</span>
+              </div>
+              <div class="summary-line">
+                <span>Asuransi</span>
+                <span>Rp 245.000</span>
+              </div>
+              <div class="summary-line total">
+                <span>Total</span>
+                <span>Rp 2.695.000</span>
+              </div>
+            </div>
+
+            <div class="terms-check">
+              <input type="checkbox" id="terms" name="terms" />
+              <label for="terms"
+                >Saya menyetujui <a href="#">Syarat & Ketentuan</a> dan
+                <a href="#">Kebijakan Privasi</a></label
+              >
+            </div>
+
+            <button
+              class="btn btn-primary checkout-btn"
+              onclick="alert('Terima kasih! Pesanan Anda telah diterima. Ini adalah halaman simulasi checkout.')"
+            >
+              Konfirmasi Pesanan
+            </button>
+            <button
+              class="btn btn-secondary back-btn"
+              onclick="window.location.href='/pages/cartPages/cart.html'"
+            >
+              Kembali ke Keranjang
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <p>
+            Raih Kualitas Terbaik: Jelajahi Kamera Profesional dengan Performa
+            Optimal untuk Setiap Momen!
+          </p>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="container footer-main-container">
+          <div class="footer-brand">CAPTURE RENT</div>
+
+          <div class="footer-socials">
+            <ul class="footer-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+            <span>|</span>
+            <a href="#"><img src="/assets/icons/ig.png" alt="Instagram" /></a>
+            <a href="#"><img src="/assets/icons/fb.png" alt="Facebook" /></a>
+            <a href="#"><img src="/assets/icons/twit.png" alt="X" /></a>
+          </div>
+          <div class="footer-links-bottom">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Sales and Refunds</a>
+            <a href="#">Legal</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // File upload handling
+      const fileInput = document.getElementById("id-upload");
+      const fileName = document.querySelector(".file-name");
+
+      fileInput.addEventListener("change", function () {
+        if (this.files.length > 0) {
+          fileName.textContent = this.files[0].name;
+        } else {
+          fileName.textContent = "Belum ada file yang dipilih";
+        }
+      });
+
+      // Payment method toggle
+      const paymentMethods = document.querySelectorAll('input[name="payment"]');
+      const paymentDetails = document.querySelector(".payment-details");
+
+      paymentMethods.forEach((method) => {
+        method.addEventListener("change", function () {
+          if (this.value === "transfer") {
+            paymentDetails.style.display = "block";
+          } else {
+            paymentDetails.style.display = "none";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

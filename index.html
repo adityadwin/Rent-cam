@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Capture Rent - Sewa Kamera</title>
+    <link rel="stylesheet" href="/styles/indexStyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Red+Hat+Display:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="/index.html" class="nav-logo">CAPTURE RENT</a>
+
+        <div class="nav-content-desktop">
+          <ul class="main-nav-menu-desktop">
+            <li>
+              <a
+                href="/index.html"
+                class="nav-link ${currentPage === 'home' ? 'active' : ''}"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/pages/product/products.html"
+                class="nav-link ${currentPage === 'products' ? 'active' : ''}"
+                >Produk</a
+              >
+            </li>
+          </ul>
+          <div class="nav-actions-desktop">
+            <a href="#" class="social-icon nav-social-icon"
+              ><img src="/assets/icons/twit-black.png" alt="X"
+            /></a>
+            <a href="#" class="social-icon nav-social-icon"
+              ><img src="/assets/icons/ig-black.png" alt="Instagram"
+            /></a>
+            <a href="/pages/forms/login.html" class="btn btn-nav-login"
+              >Login</a
+            >
+            <a
+              href="/pages/cartPages/cart.html"
+              class="cart-icon main-cart-icon"
+            >
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">2</span>
+            </a>
+          </div>
+        </div>
+
+        <button
+          class="hamburger-menu"
+          aria-label="Toggle Menu"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="mobile-menu-panel">
+          <ul class="mobile-nav-links">
+            <li>
+              <a
+                href="/index.html"
+                class="nav-link ${currentPage === 'home' ? 'active' : ''}"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="/pages/product/products.html"
+                class="nav-link ${currentPage === 'products' ? 'active' : ''}"
+                >Produk</a
+              >
+            </li>
+            <li>
+              <a href="/pages/forms/login.html" class="nav-link">Login</a>
+            </li>
+            <li>
+              <a
+                href="/pages/cartPages/cart.html"
+                class="nav-link cart-link-mobile"
+              >
+                <i class="fas fa-shopping-cart"></i> Keranjang
+                <span class="cart-count-mobile">2</span>
+              </a>
+            </li>
+          </ul>
+          <div class="mobile-social-links">
+            <a href="#" class="social-icon"
+              ><img src="/assets/icons/twit-black.png" alt="X"
+            /></a>
+            <a href="#" class="social-icon"
+              ><img src="/assets/icons/ig-black.png" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="hero-section">
+      <div class="hero-slider">
+        <div
+          class="slide"
+          style="background-image: url('assets/images/bgimage.png')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('assets/images/pic-2.png')"
+        ></div>
+        <div
+          class="slide"
+          style="background-image: url('assets/images/bgimage.png')"
+        ></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-subtitle-small">CAPTURE RENT</p>
+        <h1 class="hero-title-large">CAPTURE RENT</h1>
+        <p class="hero-description">
+          Sewa Kamera Mudah & Terjangkau – Abadikan Momen Terbaik dengan
+          Kualitas Profesional!
+        </p>
+        <a href="#" class="btn btn-primary">Sewa Sekarang</a>
+      </div>
+    </header>
+
+    <section class="promo-section section-padding">
+      <div class="container promo-container">
+        <div class="promo-image">
+          <img src="assets/images/cam-1.png" alt="Kamera Promo" />
+        </div>
+        <div class="promo-text">
+          <p class="text-discount">Special with a discounted price</p>
+          <h2>
+            Segera Hadir Minggu Ini di<br />– Kamera Terbaru untuk Mengabadikan
+            Momen Spesial!
+          </h2>
+          <a href="#" class="btn btn-secondary">
+            Get it first
+            <img src="assets/icons/arrow.png" alt="Arrow" class="btn-icon" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="daftar-kamera-section section-padding">
+      <div class="container">
+        <h2 class="section-title">DAFTAR SEWA KAMERA</h2>
+        <div class="camera-grid">
+          <a href="pages/detailPages/detailPagesOne.html" class="camera-card">
+            <div class="card-image">
+              <img src="assets/images/cam-2.png" alt="Canon EOS 5D Mark IV" />
+            </div>
+            <div class="card-content">
+              <h3>Canon EOS 5D Mark IV</h3>
+              <p class="category">DSLR</p>
+              <div class="price-details">
+                <p>Harian: Rp 150.000</p>
+                <p>Mingguan: Rp 800.000</p>
+                <p>Bulanan: Rp 2.500.000</p>
+              </div>
+            </div>
+          </a>
+          <a href="pages/detailPages/detailPagesOne.html" class="camera-card">
+            <div class="card-image">
+              <img src="assets/images/cam-3.png" alt="Sony Alpha A7 III" />
+            </div>
+            <div class="card-content">
+              <h3>Sony Alpha A7 III</h3>
+              <p class="category">Mirrorless</p>
+              <div class="price-details">
+                <p>Harian: Rp 200.000</p>
+                <p>Mingguan: Rp 1.000.000</p>
+                <p>Bulanan: Rp 3.500.000</p>
+              </div>
+            </div>
+          </a>
+          <a href="pages/detailPages/detailPagesOne.html" class="camera-card">
+            <div class="card-image">
+              <img src="assets/images/cam-4.png" alt="Nikon Z6 II" />
+            </div>
+            <div class="card-content">
+              <h3>Nikon Z6 II</h3>
+              <p class="category">Mirrorless</p>
+              <div class="price-details">
+                <p>Harian: Rp 180.000</p>
+                <p>Mingguan: Rp 950.000</p>
+                <p>Bulanan: Rp 3.200.000</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="kategori-kamera-section section-padding">
+      <div class="container">
+        <h2 class="section-title">KATEGORI KAMERA</h2>
+        <div class="kategori-grid">
+          <a href="#" class="kategori-card">
+            <div class="kategori-card-image">
+              <img src="assets/images/cam-5.png" alt="DSLR" />
+            </div>
+            <div class="kategori-card-content">
+              <h4>DSLR</h4>
+            </div>
+          </a>
+          <a href="#" class="kategori-card">
+            <div class="kategori-card-image">
+              <img src="assets/images/cam-6.png" alt="Mirrorless" />
+            </div>
+            <div class="kategori-card-content">
+              <h4>Mirrorless</h4>
+            </div>
+          </a>
+          <a href="#" class="kategori-card">
+            <div class="kategori-card-image">
+              <img src="assets/images/cam-7.png" alt="Action Camera" />
+            </div>
+            <div class="kategori-card-content">
+              <h4>Action Camera</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bayar-nanti-section">
+      <div class="bayar-nanti-image-wrapper">
+        <img
+          src="assets/images/pic-2.png"
+          alt="Kamera dengan tangan"
+          class="bayar-nanti-image-overlap"
+        />
+      </div>
+      <div class="bayar-nanti-content-wrapper">
+        <div class="bayar-nanti-kiri">
+          <h2>Sewa Sekarang, Bayar Nanti!</h2>
+          <p>
+            Kami ingin Anda merasa yakin dan puas dengan pilihan kamera sewaan
+            Anda. Nikmati masa uji coba hingga 30 hari sebelum pembayaran
+            diproses! Pelajari lebih lanjut tentang kebijakan kami.
+          </p>
+          <a href="#" class="arrow-link">
+            <img src="assets/icons/arrow.png" alt="Pelajari Lebih Lanjut" />
+          </a>
+        </div>
+        <div class="bayar-nanti-kanan"></div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <p>
+            Raih Kualitas Terbaik: Jelajahi Kamera Profesional dengan Performa
+            Optimal untuk Setiap Momen!
+          </p>
+        </div>
+      </div>
+      <div class="footer-main">
+        <div class="container footer-main-container">
+          <div class="footer-brand">CAPTURE RENT</div>
+
+          <div class="footer-socials">
+            <ul class="footer-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="/pages/product/products.html">product</a></li>
+            </ul>
+            <span>|</span>
+            <a href="#"><img src="assets/icons/ig.png" alt="Instagram" /></a>
+            <a href="#"><img src="assets/icons/fb.png" alt="Facebook" /></a>
+            <a href="#"><img src="assets/icons/twit.png" alt="X" /></a>
+          </div>
+          <div class="footer-links-bottom">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Sales and Refunds</a>
+            <a href="#">Legal</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const mobileMenuPanel = document.querySelector(".mobile-menu-panel");
+        const body = document.body;
+
+        if (hamburgerMenu && mobileMenuPanel) {
+          hamburgerMenu.addEventListener("click", function () {
+            const isActive = mobileMenuPanel.classList.toggle("active");
+            hamburgerMenu.setAttribute("aria-expanded", isActive);
+            if (isActive) {
+              this.querySelector("i").classList.remove("fa-bars");
+              this.querySelector("i").classList.add("fa-times");
+              body.classList.add("no-scroll");
+            } else {
+              this.querySelector("i").classList.remove("fa-times");
+              this.querySelector("i").classList.add("fa-bars");
+              body.classList.remove("no-scroll");
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

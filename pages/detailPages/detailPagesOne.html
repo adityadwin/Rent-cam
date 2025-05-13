@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canon EOS 5D Mark IV - Detail Kamera</title>
+    <link rel="stylesheet" href="/styles/detailStyles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="/index.html" class="nav-logo">CAPTURE RENT</a>
+
+        <div class="nav-content-desktop">
+          <ul class="main-nav-menu-desktop">
+            <li><a href="/index.html" class="nav-link">Home</a></li>
+            <li>
+              <a href="/pages/product/products.html" class="nav-link">Produk</a>
+            </li>
+          </ul>
+          <div class="nav-actions-desktop">
+            <a href="#" class="social-icon nav-social-icon"
+              ><img src="/assets/icons/twit-black.png" alt="X"
+            /></a>
+            <a href="#" class="social-icon nav-social-icon"
+              ><img src="/assets/icons/ig-black.png" alt="Instagram"
+            /></a>
+            <a href="/pages/forms/login.html" class="btn btn-nav-login"
+              >Login</a
+            >
+            <a
+              href="/pages/cartPages/cart.html"
+              class="cart-icon main-cart-icon"
+            >
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">2</span>
+            </a>
+          </div>
+        </div>
+
+        <button
+          class="hamburger-menu"
+          aria-label="Toggle Menu"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="mobile-menu-panel">
+          <ul class="mobile-nav-links">
+            <li><a href="/index.html" class="nav-link">Home</a></li>
+            <li>
+              <a href="/pages/product/products.html" class="nav-link">Produk</a>
+            </li>
+            <li>
+              <a href="/pages/forms/login.html" class="nav-link">Login</a>
+            </li>
+            <li>
+              <a
+                href="/pages/cartPages/cart.html"
+                class="nav-link cart-link-mobile"
+              >
+                <i class="fas fa-shopping-cart"></i> Keranjang
+                <span class="cart-count-mobile">2</span>
+              </a>
+            </li>
+          </ul>
+          <div class="mobile-social-links">
+            <a href="#" class="social-icon"
+              ><img src="/assets/icons/twit-black.png" alt="X"
+            /></a>
+            <a href="#" class="social-icon"
+              ><img src="/assets/icons/ig-black.png" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="detail-main">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="/index.html">Home</a> &gt;
+          <a href="/pages/product/products.html">Produk</a> &gt;
+          <a href="#">DSLR</a> &gt;
+          <span>Canon EOS 5D Mark IV</span>
+        </div>
+
+        <div class="product-detail">
+          <div class="product-image-gallery">
+            <div class="main-product-image">
+              <img
+                src="/assets/images/cam-2.png"
+                alt="Canon EOS 5D Mark IV - tampilan utama"
+                id="mainImage"
+              />
+            </div>
+            <div class="thumbnail-images">
+              <img
+                src="/assets/images/cam-2.png"
+                alt="Canon EOS 5D Mark IV - thumbnail 1"
+                class="thumbnail active-thumb"
+                onclick="changeMainImage('/assets/images/cam-2.png', this)"
+              />
+              <img
+                src="/assets/images/cam-2.png"
+                alt="Canon EOS 5D Mark IV - thumbnail 2"
+                class="thumbnail"
+                onclick="changeMainImage('/assets/images/cam-2.png', this)"
+              />
+              <img
+                src="/assets/images/cam-2.png"
+                alt="Canon EOS 5D Mark IV - thumbnail 3"
+                class="thumbnail"
+                onclick="changeMainImage('/assets/images/cam-2.png', this)"
+              />
+              <img
+                src="/assets/images/cam-2.png"
+                alt="Canon EOS 5D Mark IV - thumbnail 4"
+                class="thumbnail"
+                onclick="changeMainImage('/assets/images/cam-2.png', this)"
+              />
+            </div>
+          </div>
+          <div class="product-info">
+            <h1>Canon EOS 5D Mark IV</h1>
+            <div class="product-category-brand">
+              <span class="product-category">DSLR</span>
+              <span class="brand-separator">|</span>
+              <span class="product-brand">Canon</span>
+            </div>
+            <div class="product-rating">
+              <div class="stars">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star-half-alt"></i>
+              </div>
+              <span>(32 Reviews)</span>
+            </div>
+            <div class="product-price">
+              <div class="price-item">
+                <span class="price-label">Harian:</span>
+                <span class="price-value">Rp 150.000</span>
+              </div>
+              <div class="price-item">
+                <span class="price-label">Mingguan:</span>
+                <span class="price-value">Rp 800.000</span>
+              </div>
+              <div class="price-item">
+                <span class="price-label">Bulanan:</span>
+                <span class="price-value">Rp 2.500.000</span>
+              </div>
+            </div>
+
+            <div class="date-selection">
+              <h3>Pilih Tanggal Sewa</h3>
+              <div class="date-inputs">
+                <div class="date-field">
+                  <label for="start-date">Tanggal Mulai</label>
+                  <input type="date" id="start-date" name="start-date" />
+                </div>
+                <div class="date-field">
+                  <label for="end-date">Tanggal Selesai</label>
+                  <input type="date" id="end-date" name="end-date" />
+                </div>
+              </div>
+              <div class="availability-status available">
+                <i class="fas fa-check-circle"></i> Tersedia pada tanggal yang
+                dipilih
+              </div>
+            </div>
+
+            <div class="product-actions">
+              <button
+                class="btn btn-primary add-to-cart-btn"
+                onclick="window.location.href='/pages/cartPages/cart.html';"
+              >
+                <i class="fas fa-shopping-cart"></i> Tambahkan ke Keranjang
+              </button>
+            </div>
+            <div class="short-description">
+              <p>
+                Kamera DSLR full-frame profesional dengan resolusi 30.4MP,
+                perekaman video 4K, dan sistem AF 61 titik. Ideal untuk
+                fotografer dan videografer yang membutuhkan kualitas gambar
+                superior dan performa handal.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-tabs">
+          <div class="tab-buttons">
+            <button class="tab-btn active" data-tab="specifications">
+              Spesifikasi
+            </button>
+            <button class="tab-btn" data-tab="reviews">Review Pengguna</button>
+            <button class="tab-btn" data-tab="accessories">
+              Kelengkapan Sewa
+            </button>
+          </div>
+
+          <div class="tab-content-wrapper">
+            <div class="tab-pane active" id="specifications">
+              <h3>Spesifikasi Lengkap Canon EOS 5D Mark IV</h3>
+              <table class="specs-table">
+                <tr>
+                  <td>Tipe Kamera</td>
+                  <td>DSLR Full-Frame</td>
+                </tr>
+                <tr>
+                  <td>Resolusi Efektif</td>
+                  <td>30.4 Megapixel</td>
+                </tr>
+                <tr>
+                  <td>Sensor</td>
+                  <td>CMOS Full-Frame (36 x 24 mm)</td>
+                </tr>
+                <tr>
+                  <td>Prosesor Gambar</td>
+                  <td>DIGIC 6+</td>
+                </tr>
+                <tr>
+                  <td>ISO Range</td>
+                  <td>100-32000 (dapat diperluas hingga 50-102400)</td>
+                </tr>
+                <tr>
+                  <td>Perekaman Video</td>
+                  <td>
+                    4K (4096 x 2160) pada 30fps, Full HD (1920 x 1080) pada
+                    60fps
+                  </td>
+                </tr>
+                <tr>
+                  <td>Sistem Autofokus</td>
+                  <td>
+                    61-Titik High Density Reticular AF (41 titik cross-type)
+                  </td>
+                </tr>
+                <tr>
+                  <td>Layar LCD</td>
+                  <td>
+                    3.2 inci Clear View LCD II, sekitar 1.62 juta titik, layar
+                    sentuh
+                  </td>
+                </tr>
+                <tr>
+                  <td>Media Penyimpanan</td>
+                  <td>Slot CF dan SD (kompatibel UHS-I)</td>
+                </tr>
+                <tr>
+                  <td>Konektivitas</td>
+                  <td>Wi-Fi, NFC, GPS internal, USB 3.0, HDMI mini</td>
+                </tr>
+                <tr>
+                  <td>Berat</td>
+                  <td>Sekitar 890g (termasuk baterai dan kartu memori)</td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab-pane" id="reviews">
+              <h3>Review Pengguna (32)</h3>
+              <div class="review-summary">
+                <h4>Overall Rating: 4.5 <small>/ 5</small></h4>
+                <button class="btn btn-secondary write-review-btn">
+                  Tulis Review Anda
+                </button>
+              </div>
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="review-user">
+                    <i class="fas fa-user-circle"></i> Ahmad R.
+                  </div>
+                  <div class="review-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i>
+                  </div>
+                </div>
+                <div class="review-date">2 minggu yang lalu</div>
+                <p class="review-text">
+                  Kamera yang sangat memuaskan untuk kebutuhan fotografi
+                  profesional. Kualitas build sangat kokoh dan hasil fotonya
+                  tajam. Sewa selama seminggu untuk proyek dan sangat puas
+                  dengan performanya.
+                </p>
+              </div>
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="review-user">
+                    <i class="fas fa-user-circle"></i> Dina S.
+                  </div>
+                  <div class="review-rating">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                    ><i class="far fa-star"></i>
+                  </div>
+                </div>
+                <div class="review-date">1 bulan yang lalu</div>
+                <p class="review-text">
+                  Pertama kali mencoba DSLR full-frame dan tidak kecewa.
+                  Autofocus cepat dan akurat. Saya menyewa untuk acara keluarga
+                  dan hasilnya memuaskan.
+                </p>
+              </div>
+            </div>
+            <div class="tab-pane" id="accessories">
+              <h3>Kelengkapan Sewa Standar</h3>
+              <ul>
+                <li>
+                  <i class="fas fa-check"></i> 1x Body Kamera Canon EOS 5D Mark
+                  IV
+                </li>
+                <li><i class="fas fa-check"></i> 2x Baterai LP-E6N Original</li>
+                <li>
+                  <i class="fas fa-check"></i> 1x Charger Baterai LC-E6 Original
+                </li>
+                <li><i class="fas fa-check"></i> 1x Strap Kamera Original</li>
+                <li>
+                  <i class="fas fa-check"></i> 1x Kartu Memori CFexpress 64GB
+                  (atau setara)
+                </li>
+                <li><i class="fas fa-check"></i> 1x Tas Kamera standar</li>
+                <li><i class="fas fa-check"></i> Tutup Body Kamera</li>
+              </ul>
+              <p>
+                <small
+                  ><em
+                    >Catatan: Lensa disewa terpisah kecuali dinyatakan lain
+                    dalam paket.</em
+                  ></small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="container footer-main-container">
+          <div class="footer-brand">CAPTURE RENT</div>
+          <div class="footer-links-bottom">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">&copy; 2025 Capture Rent</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const mobileMenuPanel = document.querySelector(".mobile-menu-panel");
+        const body = document.body;
+
+        if (hamburgerMenu && mobileMenuPanel) {
+          hamburgerMenu.addEventListener("click", function () {
+            const isActive = mobileMenuPanel.classList.toggle("active");
+            hamburgerMenu.setAttribute("aria-expanded", isActive);
+            if (isActive) {
+              this.querySelector("i").classList.remove("fa-bars");
+              this.querySelector("i").classList.add("fa-times");
+              body.classList.add("no-scroll");
+            } else {
+              this.querySelector("i").classList.remove("fa-times");
+              this.querySelector("i").classList.add("fa-bars");
+              body.classList.remove("no-scroll");
+            }
+          });
+        }
+
+        const tabButtons = document.querySelectorAll(".tab-btn");
+        const tabPanes = document.querySelectorAll(".tab-pane");
+
+        tabButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            tabButtons.forEach((btn) => btn.classList.remove("active"));
+            tabPanes.forEach((pane) => pane.classList.remove("active"));
+            button.classList.add("active");
+            const tabId = button.getAttribute("data-tab");
+            document.getElementById(tabId).classList.add("active");
+          });
+        });
+      });
+
+      function changeMainImage(imageSrc, clickedThumbnail) {
+        document.getElementById("mainImage").src = imageSrc;
+        const thumbnails = document.querySelectorAll(
+          ".thumbnail-images .thumbnail"
+        );
+        thumbnails.forEach((thumb) => thumb.classList.remove("active-thumb"));
+        clickedThumbnail.classList.add("active-thumb");
+      }
+    </script>
+  </body>
+</html>

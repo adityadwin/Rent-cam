@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keranjang Sewa - Capture Rent</title>
+    <link rel="stylesheet" href="/styles/cartStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="/index.html" class="nav-logo">CAPTURE RENT</a>
+
+        <div class="nav-content-desktop">
+          <ul class="main-nav-menu-desktop">
+            <li><a href="/index.html" class="nav-link">Home</a></li>
+            <li>
+              <a href="/pages/product/products.html" class="nav-link">Produk</a>
+            </li>
+          </ul>
+          <div class="nav-actions-desktop">
+            <a href="#" class="social-icon nav-social-icon"
+              ><img src="/assets/icons/twit-black.png" alt="X"
+            /></a>
+            <a href="#" class="social-icon nav-social-icon"
+              ><img src="/assets/icons/ig-black.png" alt="Instagram"
+            /></a>
+            <a href="/pages/forms/login.html" class="btn btn-nav-login"
+              >Login</a
+            >
+            <a
+              href="/pages/cartPages/cart.html"
+              class="cart-icon main-cart-icon"
+            >
+              <i class="fas fa-shopping-cart"></i>
+              <span class="cart-count">2</span>
+            </a>
+          </div>
+        </div>
+
+        <button
+          class="hamburger-menu"
+          aria-label="Toggle Menu"
+          aria-expanded="false"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="mobile-menu-panel">
+          <ul class="mobile-nav-links">
+            <li><a href="/index.html" class="nav-link">Home</a></li>
+            <li>
+              <a href="/pages/product/products.html" class="nav-link">Produk</a>
+            </li>
+            <li>
+              <a href="/pages/forms/login.html" class="nav-link">Login</a>
+            </li>
+            <li>
+              <a
+                href="/pages/cartPages/cart.html"
+                class="nav-link cart-link-mobile active"
+              >
+                <i class="fas fa-shopping-cart"></i> Keranjang
+                <span class="cart-count-mobile">(2)</span>
+              </a>
+            </li>
+          </ul>
+          <div class="mobile-social-links">
+            <a href="#" class="social-icon"
+              ><img src="/assets/icons/twit-black.png" alt="X"
+            /></a>
+            <a href="#" class="social-icon"
+              ><img src="/assets/icons/ig-black.png" alt="Instagram"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="cart-main">
+      <div class="container">
+        <h1 class="page-title">Keranjang Sewa Anda</h1>
+
+        <div class="cart-content">
+          <div class="cart-items-container">
+            <div class="cart-item">
+              <div class="item-image">
+                <img
+                  src="/assets/images/cam-2.png"
+                  alt="Canon EOS 5D Mark IV"
+                />
+              </div>
+              <div class="item-details">
+                <h3>Canon EOS 5D Mark IV</h3>
+                <p class="item-category">DSLR</p>
+                <div class="item-dates">
+                  <p>
+                    <i class="far fa-calendar-alt"></i> 15 Mei 2025 - 22 Mei
+                    2025
+                  </p>
+                  <p><i class="far fa-clock"></i> Durasi: 7 hari</p>
+                </div>
+              </div>
+              <div class="item-quantity">
+                <label for="qty-item1">Jumlah:</label>
+                <input
+                  type="number"
+                  id="qty-item1"
+                  value="1"
+                  min="1"
+                  class="quantity-input"
+                />
+              </div>
+              <div class="item-price">
+                <p class="price-rate">Rp 150.000 / hari</p>
+                <p class="price-total">Rp 1.050.000</p>
+              </div>
+              <div class="item-actions">
+                <button class="btn-icon remove-btn" aria-label="Hapus item">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="cart-item">
+              <div class="item-image">
+                <img src="/assets/images/cam-3.png" alt="Sony Alpha A7 III" />
+              </div>
+              <div class="item-details">
+                <h3>Sony Alpha A7 III</h3>
+                <p class="item-category">Mirrorless</p>
+                <div class="item-dates">
+                  <p>
+                    <i class="far fa-calendar-alt"></i> 15 Mei 2025 - 22 Mei
+                    2025
+                  </p>
+                  <p><i class="far fa-clock"></i> Durasi: 7 hari</p>
+                </div>
+              </div>
+              <div class="item-quantity">
+                <label for="qty-item2">Jumlah:</label>
+                <input
+                  type="number"
+                  id="qty-item2"
+                  value="1"
+                  min="1"
+                  class="quantity-input"
+                />
+              </div>
+              <div class="item-price">
+                <p class="price-rate">Rp 200.000 / hari</p>
+                <p class="price-total">Rp 1.400.000</p>
+              </div>
+              <div class="item-actions">
+                <button class="btn-icon remove-btn" aria-label="Hapus item">
+                  <i class="fas fa-trash-alt"></i>
+                </button>
+              </div>
+            </div>
+            <p
+              class="empty-cart-message"
+              style="
+                display: none;
+                text-align: center;
+                padding: 20px;
+                color: var(--text-muted);
+              "
+            >
+              Keranjang Anda kosong.
+            </p>
+          </div>
+
+          <div class="cart-summary-container">
+            <h2>Ringkasan Sewa</h2>
+            <div class="summary-items">
+              <div class="summary-item">
+                <span>Canon EOS 5D Mark IV</span> <span>Rp 1.050.000</span>
+              </div>
+              <div class="summary-item">
+                <span>Sony Alpha A7 III</span> <span>Rp 1.400.000</span>
+              </div>
+              <div class="summary-item subtotal">
+                <span>Subtotal</span> <span>Rp 2.450.000</span>
+              </div>
+              <div class="summary-item">
+                <span>Asuransi (Contoh 5%)</span> <span>Rp 122.500</span>
+              </div>
+              <div class="summary-item total">
+                <span>Total Estimasi</span> <span>Rp 2.572.500</span>
+              </div>
+            </div>
+            <button
+              class="btn btn-primary checkout-btn"
+              onclick="window.location.href='/pages/checkoutPages/checkout.html'"
+            >
+              Lanjutkan ke Checkout
+            </button>
+            <button
+              class="btn btn-secondary continue-btn"
+              onclick="window.location.href='/pages/product/products.html'"
+            >
+              Lanjutkan Belanja
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="container footer-main-container">
+          <div class="footer-brand">CAPTURE RENT</div>
+          <div class="footer-links-bottom">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">&copy; 2025 Capture Rent</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburgerMenu = document.querySelector(".hamburger-menu");
+        const mobileMenuPanel = document.querySelector(".mobile-menu-panel");
+        const body = document.body;
+
+        if (hamburgerMenu && mobileMenuPanel) {
+          hamburgerMenu.addEventListener("click", function () {
+            const isActive = mobileMenuPanel.classList.toggle("active");
+            hamburgerMenu.setAttribute("aria-expanded", isActive);
+            if (isActive) {
+              this.querySelector("i").classList.remove("fa-bars");
+              this.querySelector("i").classList.add("fa-times");
+              body.classList.add("no-scroll");
+            } else {
+              this.querySelector("i").classList.remove("fa-times");
+              this.querySelector("i").classList.add("fa-bars");
+              body.classList.remove("no-scroll");
+            }
+          });
+        }
+
+        const removeButtons = document.querySelectorAll(".remove-btn");
+        removeButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const cartItem = this.closest(".cart-item");
+            if (cartItem) {
+              cartItem.style.transition =
+                "opacity 0.3s ease, transform 0.3s ease, height 0.3s ease 0.1s";
+              cartItem.style.opacity = "0";
+              cartItem.style.transform = "scale(0.95)";
+              setTimeout(() => {
+                cartItem.style.height = "0";
+                cartItem.style.paddingTop = "0";
+                cartItem.style.paddingBottom = "0";
+                cartItem.style.marginBottom = "0";
+                cartItem.style.border = "none";
+                setTimeout(() => {
+                  if (cartItem.parentNode)
+                    cartItem.parentNode.removeChild(cartItem);
+                  updateCartSummary();
+                }, 200);
+              }, 150);
+            }
+          });
+        });
+
+        function updateCartSummary() {
+          // Fungsi ini hanya placeholder, perlu logika kalkulasi ulang
+          // dan update DOM ringkasan jika item benar-benar dinamis.
+          // Untuk prototipe statis, ini bisa diabaikan atau dibuat simulasi sederhana.
+          const remainingItems = document.querySelectorAll(
+            ".cart-items-container .cart-item"
+          );
+          if (remainingItems.length === 0) {
+            const emptyCartMsg = document.querySelector(".empty-cart-message");
+            if (emptyCartMsg) emptyCartMsg.style.display = "block";
+
+            const summaryItems = document.querySelector(
+              ".cart-summary-container .summary-items"
+            );
+            if (summaryItems)
+              summaryItems.innerHTML =
+                '<p style="text-align:center; color:var(--text-muted);">Tidak ada item.</p>';
+          }
+        }
+      });
+    </script>
+  </body>
+</html>

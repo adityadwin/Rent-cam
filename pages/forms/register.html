@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Capture Rent</title>
+    <link rel="stylesheet" href="/styles/formStyle.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-section">
+        <h1 class="brand-name">CAPTURE RENT</h1>
+        <div class="login-container">
+          <h2>Register</h2>
+          <p class="subtitle">Create your Capture Rent account.</p>
+          <form action="#">
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Masukkan username Anda"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Masukkan email Anda"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <div class="password-container">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  placeholder="Buat password"
+                  required
+                />
+                <button
+                  type="button"
+                  class="toggle-password"
+                  id="togglePasswordBtn"
+                >
+                  <i class="fa-solid fa-eye-slash"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <div class="password-container">
+                <input
+                  type="password"
+                  id="confirm-password"
+                  name="confirm-password"
+                  placeholder="Konfirmasi password"
+                  required
+                />
+                <button
+                  type="button"
+                  class="toggle-password"
+                  id="toggleConfirmPasswordBtn"
+                >
+                  <i class="fa-solid fa-eye-slash"></i>
+                </button>
+              </div>
+            </div>
+
+            <button type="submit" class="login-btn">Register</button>
+          </form>
+
+          <div class="signup-option">
+            <p>
+              Sudah punya akun?
+              <a href="/pages/forms/login.html">Login</a>
+            </p>
+          </div>
+
+          <div class="divider">
+            <span>Atau</span>
+          </div>
+
+          <div class="social-login">
+            <a href="#" class="social-btn facebook">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-btn google">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#" class="social-btn apple">
+              <i class="fab fa-apple"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-section">
+        <img src="/assets/images/formimage.png" alt="Camera Equipment" />
+      </div>
+    </div>
+
+    <script>
+      // Script untuk toggle password utama
+      const togglePasswordBtn = document.querySelector("#togglePasswordBtn");
+      const passwordInput = document.querySelector("#password");
+
+      if (togglePasswordBtn && passwordInput) {
+        togglePasswordBtn.addEventListener("click", function () {
+          const type =
+            passwordInput.getAttribute("type") === "password"
+              ? "text"
+              : "password";
+          passwordInput.setAttribute("type", type);
+          this.querySelector("i").classList.toggle("fa-eye");
+          this.querySelector("i").classList.toggle("fa-eye-slash");
+        });
+      }
+
+      // Script untuk toggle konfirmasi password
+      const toggleConfirmPasswordBtn = document.querySelector(
+        "#toggleConfirmPasswordBtn"
+      );
+      const confirmPasswordInput = document.querySelector("#confirm-password");
+
+      if (toggleConfirmPasswordBtn && confirmPasswordInput) {
+        toggleConfirmPasswordBtn.addEventListener("click", function () {
+          const type =
+            confirmPasswordInput.getAttribute("type") === "password"
+              ? "text"
+              : "password";
+          confirmPasswordInput.setAttribute("type", type);
+          this.querySelector("i").classList.toggle("fa-eye");
+          this.querySelector("i").classList.toggle("fa-eye-slash");
+        });
+      }
+    </script>
+  </body>
+</html>
