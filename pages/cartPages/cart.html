@@ -181,13 +181,13 @@
                 <span>Canon EOS 5D Mark IV</span> <span>Rp 1.050.000</span>
               </div>
               <div class="summary-item">
-                <span>Sony Alpha A7 III</span> <span>Rp 1.400.000</span>
+                <span>Alpha A7 III</span> <span>Rp 1.400.000</span>
               </div>
               <div class="summary-item subtotal">
                 <span>Subtotal</span> <span>Rp 2.450.000</span>
               </div>
               <div class="summary-item">
-                <span>Asuransi (Contoh 5%)</span> <span>Rp 122.500</span>
+                <span>Asuransi</span> <span>Rp 122.500</span>
               </div>
               <div class="summary-item total">
                 <span>Total Estimasi</span> <span>Rp 2.572.500</span>
@@ -211,13 +211,33 @@
     </main>
 
     <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <p>
+            Raih Kualitas Terbaik: Jelajahi Kamera Profesional dengan Performa
+            Optimal untuk Setiap Momen!
+          </p>
+        </div>
+      </div>
       <div class="footer-main">
         <div class="container footer-main-container">
           <div class="footer-brand">CAPTURE RENT</div>
+
+          <div class="footer-socials">
+            <ul class="footer-nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="/pages/product/products.html">product</a></li>
+            </ul>
+            <span>|</span>
+            <a href="#"><img src="/assets/icons/ig.png" alt="Instagram" /></a>
+            <a href="#"><img src="/assets/icons/fb.png" alt="Facebook" /></a>
+            <a href="#"><img src="/assets/icons/twit.png" alt="X" /></a>
+          </div>
           <div class="footer-links-bottom">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Use</a>
-            <a href="#">&copy; 2025 Capture Rent</a>
+            <a href="#">Sales and Refunds</a>
+            <a href="#">Legal</a>
           </div>
         </div>
       </div>
@@ -271,9 +291,6 @@
         });
 
         function updateCartSummary() {
-          // Fungsi ini hanya placeholder, perlu logika kalkulasi ulang
-          // dan update DOM ringkasan jika item benar-benar dinamis.
-          // Untuk prototipe statis, ini bisa diabaikan atau dibuat simulasi sederhana.
           const remainingItems = document.querySelectorAll(
             ".cart-items-container .cart-item"
           );
