@@ -1,9 +1,6 @@
-/* Import fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Red+Hat+Display:wght@700;900&display=swap");
 
-/* CSS Variables */
 :root {
-  /* Colors */
   --primary-color: #4d55cc;
   --secondary-color: #3b82f6;
   --text-dark: #1e293b;
@@ -14,12 +11,10 @@
   --border-color: #e2e8f0;
   --kategori-bg: #1b4b66;
 
-  /* Typography */
   --font-primary: "Poppins", sans-serif;
   --font-secondary: "Red Hat Display", sans-serif;
 }
 
-/* Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -48,7 +43,6 @@ img {
   display: block;
 }
 
-/* Layout Components */
 .container {
   width: 100%;
   margin: 0 auto;
@@ -68,7 +62,6 @@ img {
   font-weight: 700;
 }
 
-/* Buttons */
 .btn {
   display: inline-block;
   padding: 12px 30px;
@@ -101,7 +94,6 @@ img {
   height: 18px;
 }
 
-/* Universal Navbar Styles */
 .navbar {
   background-color: var(--white);
   padding: 12px 0;
@@ -134,7 +126,7 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-left: 25px; /* Jarak dari logo */
+  margin-left: 25px;
 }
 
 .main-nav-menu-desktop {
@@ -228,28 +220,28 @@ img {
   color: var(--text-dark);
   cursor: pointer;
   padding: 5px;
-  z-index: 1001; /* Di atas panel mobile jika panel tidak full overlay */
+  z-index: 1001;
 }
 
 .mobile-menu-panel {
   display: none;
   flex-direction: column;
-  position: fixed; /* Fixed agar bisa scroll di atas konten body */
-  top: 0; /* Mulai dari paling atas */
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
-  height: 100vh; /* Full height */
+  height: 100vh;
   background-color: var(--white);
-  z-index: 1000; /* Di bawah hamburger jika hamburger di atasnya, tapi di atas konten lain */
+  z-index: 1000;
   overflow-y: auto;
-  padding-top: 70px; /* Space untuk navbar atas & tombol close (jika ada) */
+  padding-top: 70px;
   transition: transform 0.3s ease-in-out;
-  transform: translateX(-100%); /* Mulai dari luar layar kiri */
+  transform: translateX(-100%);
 }
 
 .mobile-menu-panel.active {
   display: flex;
-  transform: translateX(0%); /* Masuk ke layar */
+  transform: translateX(0%);
 }
 
 .mobile-nav-links {
@@ -273,7 +265,7 @@ img {
   color: var(--primary-color);
 }
 .mobile-nav-links li:last-child a.nav-link {
-  border-bottom: 1px solid var(--border-color); /* Pastikan ada border jika social di bawahnya */
+  border-bottom: 1px solid var(--border-color);
 }
 
 .mobile-menu-panel .cart-link-mobile {
@@ -295,7 +287,7 @@ img {
   align-items: center;
   gap: 30px;
   padding: 25px 20px;
-  margin-top: auto; /* Dorong ke bawah jika ada sisa ruang */
+  margin-top: auto;
   border-top: 1px solid var(--border-color);
 }
 .mobile-social-links .social-icon img {
@@ -308,7 +300,6 @@ body.no-scroll {
   overflow: hidden;
 }
 
-/* Hero Section */
 .hero-section {
   position: relative;
   height: 100vh;
@@ -433,7 +424,6 @@ body.no-scroll {
   line-height: 1.3;
 }
 
-/* Daftar Kamera Section */
 .daftar-kamera-section {
   background-color: var(--white);
   padding: 40px;
@@ -498,7 +488,6 @@ body.no-scroll {
   margin-bottom: 4px;
 }
 
-/* Kategori Kamera Section */
 .kategori-kamera-section {
   background-color: var(--white);
   padding: 40px;
@@ -512,14 +501,11 @@ body.no-scroll {
 
 .kategori-card {
   border-radius: 10px;
-  /* overflow: hidden; */ /* Hati-hati dengan ini jika ada masalah pemotongan, bisa jadi ini penyebabnya jika tinggi card terbatas. Untuk sementara bisa di-comment untuk melihat efeknya. Jika tidak ada batasan tinggi eksplisit pada card, ini seharusnya aman. */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  background-color: var(
-    --white
-  ); /* Tambahkan background jika belum ada, agar konsisten */
+  background-color: var(--white);
 }
 
 .kategori-card:hover {
@@ -529,41 +515,40 @@ body.no-scroll {
 
 .kategori-card-image {
   width: 100%;
-  aspect-ratio: 10 / 10; /* Menetapkan rasio aspek untuk kontainer gambar, contoh 16:10. Sesuaikan sesuai kebutuhan desain Anda. */
-  overflow: hidden; /* Sembunyikan bagian gambar yang keluar dari rasio aspek */
-  border-top-left-radius: 10px; /* Sesuaikan dengan border-radius card */
-  border-top-right-radius: 10px; /* Sesuaikan dengan border-radius card */
+  aspect-ratio: 10 / 10;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .kategori-card-image img {
   width: 100%;
-  height: auto; /* Buat gambar mengisi kontainer image */
-  object-fit: cover; /* 'cover' akan memotong gambar agar pas, 'contain' akan menampilkan seluruh gambar tapi mungkin ada spasi kosong. Pilih 'cover' jika ingin gambar selalu penuh. */
+  height: auto;
+  object-fit: cover;
   display: block;
 }
 
 .kategori-card-content {
-  padding: 20px; /* Sedikit kurangi padding jika terlalu besar */
+  padding: 20px;
   background-color: var(--kategori-bg);
   text-align: center;
-  border-bottom-left-radius: 10px; /* Sesuaikan dengan border-radius card */
-  border-bottom-right-radius: 10px; /* Sesuaikan dengan border-radius card */
-  flex-grow: 1; /* Memastikan konten ini bisa tumbuh jika ada ruang ekstra, tapi tidak akan menyusut hingga memotong teks */
-  display: flex; /* Tambahkan ini untuk alignment vertikal teks */
-  flex-direction: column; /* Tambahkan ini */
-  justify-content: center; /* Pusatkan teks secara vertikal di dalam content box */
-  min-height: 80px; /* Beri tinggi minimum agar tidak terlalu pendek jika judulnya singkat */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80px;
 }
 
 .kategori-card-content h4 {
   font-family: var(--font-secondary);
-  font-size: 1.5rem; /* Sesuaikan ukuran font jika perlu */
+  font-size: 1.5rem;
   color: var(--text-light);
   font-weight: 700;
-  margin: 0; /* Hapus margin default dari h4 jika ada */
+  margin: 0;
 }
 
-/* Animations */
 @keyframes heroSlider {
   0%,
   28%,
@@ -748,8 +733,7 @@ body.no-scroll {
     padding: 20px;
   }
   .nav-container {
-    /* Pastikan .container di dalam .nav-container sudah benar */
-    padding-left: 20px; /* Menyesuaikan dengan padding global .container Anda */
+    padding-left: 20px;
     padding-right: 20px;
   }
   .nav-content-desktop {
@@ -762,13 +746,12 @@ body.no-scroll {
     padding: 10px 0;
   }
   .mobile-menu-panel {
-    padding-top: 58px; /* Navbar height: (10px padding * 2) + logo/content height ~38px = 58px */
-    /* Pastikan tinggi aktual navbar mobile Anda adalah 58px */
+    padding-top: 58px;
   }
 
   .search-filter-section {
     padding: 30px 0;
-    margin-top: 58px; /* Disesuaikan dengan tinggi navbar baru */
+    margin-top: 58px;
   }
   .search-filter-container {
     padding: 25px;
@@ -788,7 +771,7 @@ body.no-scroll {
   .hero-section {
     height: auto;
     padding: 80px 0 60px;
-    margin-top: 58px; /* Disesuaikan dengan tinggi navbar baru */
+    margin-top: 58px;
   }
   .hero-title-large {
     font-size: clamp(32px, 5vw, 48px);

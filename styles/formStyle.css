@@ -132,8 +132,8 @@ body {
 
 .remember-me input[type="checkbox"] {
   margin-right: 8px;
-  width: auto; /* Ditambahkan agar checkbox tidak 100% width dari * reset */
-  padding: 0; /* Ditambahkan agar checkbox tidak 100% width dari * reset */
+  width: auto;
+  padding: 0;
 }
 
 .forgot-password {
@@ -259,19 +259,19 @@ body {
 @media (max-width: 768px) {
   html,
   body {
-    overflow-y: auto; /* Izinkan scroll pada mobile jika konten terlalu panjang */
+    overflow-y: auto;
   }
   .container {
     flex-direction: column;
-    height: auto; /* Tinggi otomatis untuk mobile */
+    height: auto;
   }
   .form-section {
     padding: 30px 20px;
-    order: 2; /* Form di bawah gambar jika gambar ditampilkan */
-    overflow-y: visible; /* Tidak perlu scroll internal lagi */
+    order: 2;
+    overflow-y: visible;
   }
   .brand-name {
-    margin-top: 0; /* Reset margin top */
+    margin-top: 0;
     margin-bottom: 30px;
     font-size: 24px;
   }
@@ -282,12 +282,6 @@ body {
     font-size: 14px;
   }
   .image-section {
-    display: none; /* Gambar disembunyikan pada mobile (sesuai behavior sebelumnya) */
-    /* Jika ingin ditampilkan: */
-    /* order: 1; */
-    /* flex: none; */
-    /* width: 100%; */
-    /* height: 30vh; */ /* Atau tinggi yang sesuai */
-    /* padding: 20px; */
+    display: none;
   }
 }
